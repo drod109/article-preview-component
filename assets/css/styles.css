@@ -82,13 +82,12 @@ a:hover {
 }
 .card--title {
     font-size: clamp(var(--fs-lg), 5vw, var(--fs-xxl));
-    /* font-size: var(--fs-xxl); */
     font-weight: var(--fw-bold);
     padding: var(--spacing-lg) 0 var(--spacing-xsm) 0;
 }
 .card--text {
     color: var(--desaturated-dark-blue);
-    font-size: clamp(var(--fs-sm), 5vw, var(--fs-lg));
+    font-size: clamp(var(--fs-sm), 4vw, var(--fs-lg));
     padding: 0 0 var(--spacing-reg) 0;
 }
 .avatar {
@@ -106,8 +105,8 @@ a:hover {
 }
 #avatar--img {
     border-radius: 50%;
-    width: 4.375rem;
-    height: 4.375rem;
+    width: clamp(3.5rem, 4vw, 4.375rem); 
+    height: clamp(3.5rem, 4vw, 4.375rem);
 }
 .avatar--name span {
     color: var(--grayish-blue);
@@ -120,8 +119,8 @@ a:hover {
     position: relative;
     margin: 0 var(--spacing-reg) 0 0;
     background-color: var(--light-grayish-blue);
-    width: 4rem;
-    height: 4rem;
+    width: clamp(3rem, 4vw, 4rem);
+    height: clamp(3rem, 4vw, 4rem);
     border-radius: 50%;
 }
 .tooltip:hover .tooltiptext {
@@ -143,7 +142,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    visibility: hidden;
+    /* visibility: hidden; */
     text-transform: uppercase;
     letter-spacing: 4px;
     width: 240px;
@@ -193,5 +192,6 @@ a:hover {
     }
     .avatar {
         font-size: var(--fs-sm);
+        padding: 0 0 0.5rem 0;
     }
 }
