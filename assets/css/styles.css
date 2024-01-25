@@ -38,7 +38,7 @@
 }
 html {
     font-family: var(--ff-manrope);
-    font-size: clamp(var(--fs-reg), 5vw, var(--fs-body-copy));
+    font-size: clamp(var(--fs-body-copy), 5vw, var(--fs-reg));
 }
 
 body {
@@ -55,7 +55,10 @@ body {
 }
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--very-dark-grayish-blue);
+}
+a:hover {
+    color: var(--grayish-blue);
 }
 .card {
     display: flex;
@@ -78,14 +81,14 @@ a {
     padding: 0 var(--spacing-lg) 0 var(--spacing-lg);
 }
 .card--title {
-    font-size: clamp(var(--fs-xl), 5vw, var(--fs-xxl));
+    font-size: clamp(var(--fs-lg), 5vw, var(--fs-xxl));
     /* font-size: var(--fs-xxl); */
     font-weight: var(--fw-bold);
     padding: var(--spacing-lg) 0 var(--spacing-xsm) 0;
 }
 .card--text {
     color: var(--desaturated-dark-blue);
-    font-size: clamp(var(--fs-reg), 5vw, var(--fs-lg));
+    font-size: clamp(var(--fs-sm), 5vw, var(--fs-lg));
     padding: 0 0 var(--spacing-reg) 0;
 }
 .avatar {
@@ -169,7 +172,7 @@ a {
     font-size: var(--fs-xxl);
 }
 .author {
-    font-size: var(--fs-sm);
+    font-size: clamp(var(--fs-xsm), 3vw, var(--fs-sm));
 }
 @media screen and (max-width: 768px) {
     body {
@@ -186,7 +189,9 @@ a {
         border-top-right-radius: var(--border-radius-sm);
     }
     .card--content {
-        padding: 0 var(--spacing-reg) var(--spacing-reg) var(--spacing-reg);
+        padding: 0 var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
     }
-    
+    .avatar {
+        font-size: var(--fs-sm);
+    }
 }
