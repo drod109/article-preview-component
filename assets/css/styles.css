@@ -38,6 +38,7 @@
 }
 html {
     font-family: var(--ff-manrope);
+    font-size: clamp(var(--fs-reg), 5vw, var(--fs-body-copy));
 }
 
 body {
@@ -60,17 +61,13 @@ a {
     display: flex;
     background-color: white;
     border-radius: var(--border-radius-sm);
-    max-width: 47vw;
-    max-width: 47svw;
-    min-height: 35vh;
-    min-height: 35svh;
+    max-width: 48vw;
+    max-width: 48svw;
 }
 .card--img, 
 #card--img {
     display: flex;
     border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
-    justify-content: stretch;
-    align-items: stretch;
     width: 100%;
     height: auto;
 }
@@ -81,13 +78,14 @@ a {
     padding: 0 var(--spacing-lg) 0 var(--spacing-lg);
 }
 .card--title {
-    font-size: var(--fs-xxl);
+    font-size: clamp(var(--fs-xl), 5vw, var(--fs-xxl));
+    /* font-size: var(--fs-xxl); */
     font-weight: var(--fw-bold);
-    padding: var(--spacing-xl) 0 var(--spacing-xsm) 0;
+    padding: var(--spacing-lg) 0 var(--spacing-xsm) 0;
 }
 .card--text {
     color: var(--desaturated-dark-blue);
-    font-size: var(--fs-med);
+    font-size: clamp(var(--fs-reg), 5vw, var(--fs-lg));
     padding: 0 0 var(--spacing-reg) 0;
 }
 .avatar {
@@ -95,6 +93,8 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 0 3.5rem 0;
+    position: relative;
+    top: 15px;
 }
 .avatar--img {
     display: flex;
@@ -108,7 +108,7 @@ a {
 }
 .avatar--name span {
     color: var(--grayish-blue);
-    font-size: var(--fs-xsm);
+    font-size: var(--fs-sm);
 }
 .tooltip {
     display: flex;
@@ -121,6 +121,16 @@ a {
     height: 4rem;
     border-radius: 50%;
 }
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: visibility 5s ease;
+}
+.tooltip:hover {
+    background-color: var(--very-dark-grayish-blue);
+    color: white;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+}
 .tooltiptext > span {
     color: var(--grayish-blue);
 }
@@ -130,7 +140,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    /* visibility: hidden; */
+    visibility: hidden;
     text-transform: uppercase;
     letter-spacing: 4px;
     width: 240px;
@@ -140,11 +150,10 @@ a {
     text-align: center;
     border-radius: 10px;
     padding: 5px 5px;
-    /* Position the tooltip */
     z-index: 1;
     bottom: 100%;
     top: -70px;
-    
+    cursor: pointer;
 }
 .tooltiptext::after {
     content: "";
@@ -158,4 +167,26 @@ a {
 }
 .bx {
     font-size: var(--fs-xxl);
+}
+.author {
+    font-size: var(--fs-sm);
+}
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .card {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+    .card--img,
+    #card--img {
+        border-radius: 0;
+        border-top-left-radius: var(--border-radius-sm);
+        border-top-right-radius: var(--border-radius-sm);
+    }
+    .card--content {
+        padding: 0 var(--spacing-reg) var(--spacing-reg) var(--spacing-reg);
+    }
+    
 }
