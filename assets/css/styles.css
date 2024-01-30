@@ -141,8 +141,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  pointer-events: none;
-  opacity: 0;
   gap: 10px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -160,7 +158,6 @@ a:hover {
   transition: opacity 0.3s ease;
 }
 .social--share:hover .social--share-icons {
-  pointer-events: auto;
   visibility: visible;
   opacity: 1;
 }
