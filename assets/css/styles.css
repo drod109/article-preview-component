@@ -28,6 +28,7 @@
   /* Spacings */
   --spacing-xl: 4rem;
   --spacing-lg: 2rem;
+  --spacing-med: 1.25rem;
   --spacing-reg: 1rem;
   --spacing-sm: 0.875rem;
   --spacing-xsm: 0.625rem;
@@ -36,6 +37,7 @@
   --border-radius-sm: 0.875rem;
   --border-radius-xsm: 0.625rem;
 }
+
 html {
   font-family: var(--ff-manrope);
   font-size: clamp(var(--fs-body-copy), 5vw, var(--fs-reg));
@@ -47,19 +49,21 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  min-height: 100svh;
   padding: var(--spacing-reg);
   background-color: var(--light-grayish-blue);
   color: var(--very-dark-grayish-blue);
   line-height: 1.5;
 }
+
 a {
   text-decoration: none;
   color: var(--very-dark-grayish-blue);
 }
+
 a:hover {
   color: var(--grayish-blue);
 }
+
 .card {
   display: flex;
   background-color: white;
@@ -68,6 +72,7 @@ a:hover {
   max-width: 50rem;
   min-height: 20rem;
 }
+
 .card--img,
 #card--img {
   display: flex;
@@ -75,125 +80,139 @@ a:hover {
   width: 100%;
   height: auto;
 }
+
 .card--content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0 var(--spacing-lg) 0 var(--spacing-lg);
 }
+
 .card--title {
-  font-size: clamp(var(--fs-med), 5vw, var(--fs-lg));
+  font-size: clamp(var(--fs-med), 3vw, var(--fs-xl));
   font-weight: var(--fw-bold);
   padding: var(--spacing-lg) 0 var(--spacing-xsm) 0;
 }
+
 .card--text {
   color: var(--desaturated-dark-blue);
   font-size: clamp(var(--fs-sm), 4vw, var(--fs-reg));
   padding: 0 0 var(--spacing-reg) 0;
 }
+
 .avatar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 0 3.5rem 0;
   position: relative;
-  top: 15px;
+  top: 0.938rem;
 }
+
 .avatar--img {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
 }
+
 #avatar--img {
   border-radius: 50%;
   width: clamp(3.5rem, 4vw, 4.375rem);
   height: clamp(3.5rem, 4vw, 4.375rem);
 }
+
 .avatar--name span {
   color: var(--grayish-blue);
   font-size: var(--fs-sm);
 }
+
 .avatar--name p {
   font-weight: var(--fw-bold);
 }
+
 .social--share {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  margin: 0 var(--spacing-reg) 0 0;
-  background-color: var(--light-grayish-blue);
+  background-color: hsl(210, 46%, 95%);
   width: clamp(2.5rem, 4vw, 3rem);
   height: clamp(2.5rem, 4vw, 3rem);
   border-radius: 50%;
+  cursor: pointer;
   transition: background-color 0.5s ease;
 }
+
 .social--share:hover {
-  background-color: var(--very-dark-grayish-blue);
+  background-color: hsl(217, 19%, 35%);
   color: white;
 }
-.social--share--icons > span {
-  color: var(--grayish-blue);
-}
+
 .social--share--icons {
-  position: absolute;
-  display: flex;
+  display: none;
   align-items: center;
-  justify-content: center;
-  visibility: hidden;
-  gap: 10px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  width: 240px;
-  height: 50px;
+  position: absolute;
+  top: -3.75rem;
   background-color: var(--very-dark-grayish-blue);
   color: white;
-  text-align: center;
-  border-radius: 10px;
-  padding: 5px 5px;
-  bottom: 100%;
-  top: -60px;
-  right: -80px;
-  z-index: 5;
-  transition: opacity 0.3s ease;
+  padding: var(--spacing-med);
+  border-radius: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.188rem;
+  width: 13.125rem;
+  height: 3.125rem;
 }
-.social--share:hover .social--share-icons {
-  visibility: visible;
-  opacity: 1;
-}
+
 .social--share--icons::after {
   content: "";
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 10px;
+  margin-left: -0.625rem;
+  border-width: var(--border-radius-xsm);
   border-style: solid;
   border-color: var(--very-dark-grayish-blue) transparent transparent
     transparent;
 }
+
 .social--share--icons i.bx {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
+
 .social--share--icons i.bx:hover {
   color: var(--light-grayish-blue);
-  transform: translateY(-6px);
+  transform: translateY(-0.375rem);
   cursor: pointer;
 }
+
+.social--share--icons > span {
+  color: var(--grayish-blue);
+}
+
+.social--share:hover .social--share--icons {
+  display: flex;
+}
+
+.social--share--icons i {
+  margin: 5px 5px;
+  transition: transform 0.5s ease;
+}
+
+.social--share--icons i:hover {
+  transform: translateY(-0.188rem);
+}
+
 .bx {
   font-size: clamp(var(--fs-xl), 2vw, var(--fs-xxl));
 }
+
 .author {
   font-size: clamp(var(--fs-xsm), 3vw, var(--fs-sm));
 }
 
 /* @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   .card {
     flex-direction: column;
-    max-width: 90vw;
+    max-width: 95%;
   }
   .card--img,
   #card--img {
@@ -222,7 +241,6 @@ a:hover {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: -1;
   }
   .social--share--icons::after {
     content: none;
