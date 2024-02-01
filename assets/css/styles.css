@@ -86,7 +86,7 @@ a:hover {
 .card_img {
   min-width: 17.813rem;
   border-radius: 10px 0 0 10px;
-  background-image: url(/assets/images/drawers.jpg);
+  background-image: url(../images/drawers.jpg);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
