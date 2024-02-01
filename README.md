@@ -30,7 +30,11 @@ Users should be able to:
 ![Desktop Active State Screenshot](https://i.postimg.cc/m2GwQx8T/desktop-active-state.jpg)
 
  <p align="center">
-  <img width="199" height="797" src="https://i.postimg.cc/cL5TP497/mobile-design.jpg">
+  <img width="375" height="667" src="https://i.postimg.cc/KcTfkc79/mobile-design.jpg">
+</p>
+
+ <p align="center">
+  <img width="375" height="667" src="https://i.postimg.cc/5y8SZpNc/mobile-active-state.jpg">
 </p>
 
 ### The result
