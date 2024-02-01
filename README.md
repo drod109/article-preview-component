@@ -39,10 +39,10 @@ Users should be able to:
 
 ### The result
 
-![Project Desktop Screenshot](https://i.postimg.cc/KzsGCWks/desktop-screenshot.png)
+![Project Desktop Screenshot](https://i.postimg.cc/VLD79fvX/Screenshot-2024-02-01-132007.png)
 
  <p align="center">
-  <img width="199" height="797" src="https://i.postimg.cc/bJvYCPJt/mobile-screenshot.png">
+  <img width="447" height="800" src="https://i.postimg.cc/bNzC2Dyz/Screenshot-2024-02-01-132201.png">
 </p>
 
 ### Links
