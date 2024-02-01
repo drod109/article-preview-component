@@ -48,7 +48,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL Primary: [Live Site Preview](https://drod109.github.io/article-preview-component/)
-- Live Site URL Backup: [Live Site Preview](https://codepen.io/drodrigues/full/)
+- Live Site URL Backup: [Live Site Preview](https://codepen.io/drodrigues/full/JjzLayO)
 
 ## My process
 
