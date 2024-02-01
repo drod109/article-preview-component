@@ -47,8 +47,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL Primary: [Live Site Preview](https://drod109.github.io/article-preview-component/)
+- Live Site URL Backup: [Live Site Preview](https://codepen.io/drodrigues/full/)
 
 ## My process
 
