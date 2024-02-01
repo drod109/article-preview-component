@@ -270,8 +270,6 @@ a:hover {
     width: 100%;
     min-height: 5rem;
     padding: 0 1.8rem;
-    justify-content: flex-start;
-    align-items: center;
     position: absolute;
     border-radius: 0 0 var(--border-radius-xsm) var(--border-radius-xsm);
     top: auto;
