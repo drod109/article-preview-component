@@ -274,7 +274,7 @@ a:hover {
     align-items: center;
     position: absolute;
     border-radius: 0 0 10px 10px;
-    top: auto;
+    top: -6px;
     right: 0;
     bottom: 0;
     left: 0;
