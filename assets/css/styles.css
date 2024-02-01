@@ -274,11 +274,10 @@ a:hover {
     align-items: center;
     position: absolute;
     border-radius: 0 0 var(--border-radius-xsm) var(--border-radius-xsm);
-    top: -6px;
+    top: auto;
     right: 0;
-    bottom: 0;
+    bottom: 0.7rem;
     left: 0;
-    box-sizing: border-box;
   }
 
   .social_share_icons::after {
