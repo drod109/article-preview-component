@@ -25,7 +25,9 @@ Users should be able to:
 
 ### The design
 
-![Desktop Screenshot](https://i.postimg.cc/jSjZ8JXd/desktop-design.jpg)
+![Desktop Screenshot](https://i.postimg.cc/gkqKsMT8/desktop-design.jpg)
+
+![Desktop Active State Screenshot](https://i.postimg.cc/m2GwQx8T/desktop-active-state.jpg)
 
  <p align="center">
   <img width="199" height="797" src="https://i.postimg.cc/cL5TP497/mobile-design.jpg">
