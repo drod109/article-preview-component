@@ -63,12 +63,6 @@ Users should be able to:
 - [MSD Web Docs](https://developer.mozilla.org/)
 - [Webdev](https://web.dev/)
 
-### Useful resources
-
-- [ARIA (APG)](https://www.w3.org/WAI/ARIA/)
-- [MSD Web Docs](https://developer.mozilla.org/)
-- [Webdev](https://web.dev/)
-
 ## Author
 
 - Frontend Mentor - [@drod109](https://www.frontendmentor.io/profile/drod109)
